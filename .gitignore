@@ -1,0 +1,17 @@
+# General
+.DS_Store
+*.log
+*.swp
+*~
+__pycache__/
+.idea/
+
+# Python
+venv/
+*.pyc
+
+# Node
+node_modules/
+
+# Environment variables
+.env
