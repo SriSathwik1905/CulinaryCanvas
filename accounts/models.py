@@ -5,8 +5,10 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 class User(AbstractUser):
-    bio = models.TextField(blank=True)
-    profile_picture_url = models.CharField(max_length=255, blank=True)
+     bio = models.TextField(blank=True)
+     profile_picture_url = models.CharField(max_length=255, blank=True)
 
-    def __str__(self):
-        return self.username
+     def __str__(self):
+         return self.username
+     class Meta: # Add this meta 
+        app_label = 'accounts'
